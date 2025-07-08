@@ -25,13 +25,13 @@ function App() {
 
       <div className='w-full  bg-gray-100'>
         <nav className='flex h-[10vh] mt-10 justify-center gap-10 text-xl'>
-    <Link to="/registration">Home</Link>
-    <Link to="/registration">Registration</Link>
+    <Link to="/">Home</Link>
+    <Link to="/">Registration</Link>
     <Link to="/login">Admin Login</Link>
    </nav>
       <Routes>
         <Route path='/adminlogin' element={<Adminlogin/>}/>
-        <Route path='/registration' element={<Registration/>}/>
+        <Route path='/' element={<Registration/>}/>
         <Route path='/login' element={<Login/>}/>
         {/* <Route path='/dashboard' element={<Dashboard/>}/> */}
         <Route path='/dashboard' element={<Dashboard1/>}/>
